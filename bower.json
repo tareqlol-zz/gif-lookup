@@ -1,0 +1,24 @@
+{
+  "name": "giphyLookup",
+  "authors": [
+    "tareqhassan54@gmail.com"
+  ],
+  "description": "AngularJS App built to view gif images from Giphy API",
+  "main": "",
+  "keywords": [
+    "Giphy",
+    "AngualrJS"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "bower-angular#^1.6.2"
+  }
+}

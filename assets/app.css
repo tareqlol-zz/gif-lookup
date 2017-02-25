@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #7BDAFA;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: white;
+  text-align: center; }
+
+.visibilty-hidden {
+  visibility: hidden; }
+
+button {
+  background: white;
+  color: #7BDAFA;
+  border: 0;
+  padding: 11px 10px;
+  font-size: 15px;
+  font-family: "PT Sans Narrow", sans-serif;
+  cursor: pointer; }
+
+/* Include this file in your html if you are using the CSP mode. */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important; }
+
+ng\:form {
+  display: block; }
+
+.ng-animate-shim {
+  visibility: hidden; }
+
+.ng-anchor {
+  position: absolute; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+.loading {
+  position: relative; }
+
+.loading:after {
+  content: " " !important;
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 0;
+  z-index: auto;
+  position: absolute;
+  background: url(./img/loading.gif) center center no-repeat rgba(250, 250, 250, 0.8);
+  background-size: 32px auto; }
+
+.header-section {
+  width: 70%;
+  margin: 0 auto 20px; }
+
+.page-title {
+  text-align: center;
+  margin: 10px auto 20px;
+  color: white;
+  font-size: 50px; }
+
+.actions {
+  width: 40%;
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 10px; }
+
+.actions h4 {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center; }
+
+.random-search {
+  float: right; }
+
+.random-search button {
+  width: 110px;
+  border-radius: 4px; }
+
+.keyword-search {
+  float: left; }
+
+.keyword-search input {
+  margin: 0;
+  text-align: left;
+  line-height: 1.21428571em;
+  padding: 11px 7px;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: #333;
+  width: 78%;
+  float: left;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 15px;
+  font-family: "PT Sans Narrow", sans-serif; }
+
+.keyword-search button {
+  width: 20%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  float: left;
+  width: 20%; }
+
+.note {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px; }
+
+.list-section {
+  position: relative;
+  clear: both; }
+
+.list-section img, .list-section video {
+  width: 100%;
+  vertical-align: middle;
+  max-height: 270px; }
+
+.list-section .viewport {
+  clear: both;
+  width: 97%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.list-section .list {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  transition: 300ms all; }
+
+.list-section .image {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer; }
+
+.list-section .image:after {
+  content: 'GIF';
+  border: 2px dashed white;
+  padding: 12px 14px 9px;
+  position: absolute;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.38);
+  font-size: 27px;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  border-radius: 50%; }
+
+.list-section .image.playing:after {
+  display: none; }
+
+.list-section .arrows {
+  position: absolute;
+  margin-top: -25px;
+  font-size: 20px;
+  width: 32px;
+  height: 37px;
+  top: 50%;
+  background: url(./img/arrow.png) no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  transition: 300ms all;
+  z-index: 10; }
+
+.list-section .arrows.prev {
+  left: -4px;
+  transform: scale(-1);
+  -webkit-transform: scale(-1);
+  -ms-transform: scale(-1); }
+
+.list-section .arrows.next {
+  right: 4px; }
+
+.list-section .image-item {
+  list-style: none;
+  background: white;
+  width: 250px;
+  float: left;
+  display: table;
+  border: 2px solid #dce0f7;
+  padding: 20px 10px;
+  height: 270px;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  margin: 5px 7px; }
+
+.list-section:hover .arrows {
+  opacity: 1; }
+
+.list-section:hover .prev {
+  left: 30px; }
+
+.list-section:hover .next {
+  right: 24px; }
+
+.list-section.grid .arrows {
+  display: none; }
+
+.list-section.grid .image-item {
+  height: 320px;
+  width: 19%; }
+
+.switch-view {
+  float: right;
+  margin-right: 20px; }
+
+.powered-by-giphy {
+  position: fixed;
+  bottom: 0;
+  right: 0; }

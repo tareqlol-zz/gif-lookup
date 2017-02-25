@@ -1,0 +1,24 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: $primary;
+	font-family: $base-font;
+	color:white;
+	text-align: center;
+}
+.visibilty-hidden{
+	visibility: hidden;
+}
+button {
+    background: white;
+    color: $primary;
+    border: 0;
+    padding: 11px 10px;
+    font-size: 15px;
+	font-family: $base-font;
+	cursor: pointer;
+}
+// .ng-invalid.ng-dirty{
+// 	border-color: #ed143d !important;
+// }
