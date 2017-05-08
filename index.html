@@ -1,47 +1,11 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>GIF Lookup</title>
-		<link rel="stylesheet" href="assets/app.css">
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-	</head>
-	<body ng-app="carouselApp">
-		<section ng-controller="messagesController">
-			<div class="message {{type}} ng-cloak" ng-show="active">
-				{{message}}
-			</div>
-		</section>
-		<section ng-controller="viewController">
-			<header class="header-section clearfix">
-				<section>
-					<h1 class="page-title">GIF Lookup </h1>
-				</section>
-				<section ng-class="{'loading': showLoading}" class="actions keyword-search">
-					<form name="searchForm" novalidate>
-						<h4>Search by a keyword</h4>
-						<input required placeholder="keyword for ex('sherlock', 'cats')" type="text" ng-model="searchQuery">
-						<button ng-click="searchForm.$valid && search(false)">Search</button>
-					</form>
-				</section>
-				<section ng-class="{'loading': showLoading}" class="actions random-search">
-					<h4>I am bored, just show me some random giphys! </h4>
-					<button ng-click="search(true)">Random</button>
-				</section>
-			</header>
-			<h4 class="note ng-cloak" ng-if="searchKeyword">Results for {{searchKeyword}}</h4>
-			<section ng-class="{'loading': showLoading}">
-				<list data="giphyCarouselList"></list>
-			</section>
-		</section>
-		<img class="powered-by-giphy" src="assets/img/PoweredBy_200px-White_HorizLogo.png">
-
-		<script src="bower_components/angular/angular.min.js"></script>
-		<script src="app/app.js"></script>
-		<script src="app/plugins/carouselComponent.js"></script>
-		<script src="app/directives/list.js"></script>
-		<script src="app/controllers/viewController.js"></script>
-		<script src="app/controllers/messagesController.js"></script>
-		<script src="app/services/giphyService.js"></script>
-		<script src="app/services/formatters/giphyFormatters.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>gif-lookup</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
