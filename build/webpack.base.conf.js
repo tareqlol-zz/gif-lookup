@@ -6,7 +6,7 @@ var vueLoaderConfig = require('./vue-loader.conf')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
+console.log(resolve('node_modules'));
 module.exports = {
   entry: {
     app: './src/main.js'
@@ -22,7 +22,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'node_modules': resolve('node_modules')
     }
   },
   module: {
@@ -44,7 +45,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test'), resolve('babel-polyfill')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

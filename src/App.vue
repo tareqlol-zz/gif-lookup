@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view></router-view>
+    <img class="powered-by-giphy" src="./assets/img/PoweredBy_200px-White_HorizLogo.png">
   </div>
 </template>
 
