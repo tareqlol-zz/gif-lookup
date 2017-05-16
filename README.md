@@ -1,7 +1,7 @@
 # gif-lookup
 #### VueJS App built to view gif images from Giphy API
 ***
-  # Demo : https://tareqlol.github.io/gitRepos/gif-lookup/
+  # Demo : https://tareqlol.github.io/gitRepos/gif-lookup/dist/
 ***
 
 > A Vue.js project
