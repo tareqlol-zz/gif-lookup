@@ -1,13 +1,11 @@
 <template>
   <section class="content">
     <section is="SearchForm"></section>
-    <section is="SearchList" :images="images" keep-alive></section>
   </section>
 </template>
 
 <script>
 import SearchForm from '@/components/SearchForm';
-import SearchList from '@/components/SearchList';
 
 export default {
   name: 'home',
@@ -16,7 +14,7 @@ export default {
       images: [],
     };
   },
-  components: { SearchForm, SearchList },
+  components: { SearchForm },
 };
 </script>
 

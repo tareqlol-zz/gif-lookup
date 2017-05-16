@@ -9,11 +9,9 @@ Vue.use(vueResource);
 
 Vue.config.productionTip = false;
 
-Vue.http.interceptor.before = (request, next) => {
-  // window.console.log(request, next);
-  // override before interceptor
-  next();
-};
+// Vue.http.interceptor.before = (request, next) => {
+//   next();
+// };
 
 /* eslint-disable no-new */
 new Vue({

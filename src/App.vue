@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
     <img class="powered-by-giphy" src="./assets/img/PoweredBy_200px-White_HorizLogo.png">
   </div>
@@ -13,12 +12,17 @@ export default {
 </script>
 
 <style>
+body{background: #00bcd4;}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "PT Sans Narrow", 'Avenir', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.powered-by-giphy{
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 </style>

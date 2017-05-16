@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/components/Home';
+import HomePage from '@/components/HomePage';
+import SearchPage from '@/components/SearchPage';
 
 Vue.use(Router);
 
@@ -8,8 +9,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home,
+      name: 'HomePage',
+      component: HomePage,
+    }, {
+      path: '/search/:keyword',
+      name: 'SearchPage',
+      component: SearchPage,
+    }, {
+      path: '*',
+      redirect: '/',
     },
   ],
 });

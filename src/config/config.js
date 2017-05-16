@@ -3,7 +3,7 @@ const GIPHY = {
   APIKEY: 'dc6zaTOxFJmzC',
   RANDOMPATH: '/v1/gifs/random',
   SEARCHPATH: '/v1/gifs/search',
-  LIMIT: 10,
+  LIMIT: 30,
 };
 
 export default { GIPHY };
